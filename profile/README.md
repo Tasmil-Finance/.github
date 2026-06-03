@@ -55,7 +55,7 @@ flowchart LR
 
 | Repository | Description | Stack |
 |------------|-------------|-------|
-| [frontend](https://github.com/Tasmil-Finance/frontend) | Web application at zyf.ai | Next.js 16, React 19, TailwindCSS 4 |
+| [tasmil-finance](https://github.com/Tasmil-Finance/tasmil-finance) | Web application at zyf.ai | Next.js 16, React 19, TailwindCSS 4 |
 | [mcp-stellar](https://github.com/Tasmil-Finance/mcp-stellar) | 60+ Stellar DeFi tools via MCP | TypeScript, Stellar SDK 14 |
 | [user-docs](https://github.com/Tasmil-Finance/user-docs) | User-facing documentation site | Fumadocs, Next.js |
 
