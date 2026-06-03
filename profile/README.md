@@ -1,122 +1,99 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Tasmil-Finance/frontend/main/public/images/logo.png" alt="Tasmil Finance" width="120" />
+  <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/images/logo.png" alt="Tasmil Finance" width="120" />
 </p>
 
 <h1 align="center">Tasmil Finance</h1>
 
 <p align="center">
-  <strong>AI-managed yield vaults on Stellar/Soroban</strong><br/>
-  Smart, automated DeFi portfolio management for the Stellar ecosystem
+  <strong>Autonomous yield optimization on Stellar</strong>
 </p>
 
 <p align="center">
-  <a href="https://zyf.ai"><img alt="Website" src="https://img.shields.io/badge/zyf.ai-Live%20App-111827?style=for-the-badge" /></a>
-  <img alt="Network" src="https://img.shields.io/badge/Network-Stellar%20Mainnet-000000?style=for-the-badge" />
-  <img alt="AI" src="https://img.shields.io/badge/AI-LangGraph%20Agents-2563eb?style=for-the-badge" />
-  <img alt="MCP" src="https://img.shields.io/badge/MCP-60%2B%20DeFi%20Tools-0f766e?style=for-the-badge" />
+  <a href="https://zyf.ai">
+    <img alt="Live App" src="https://img.shields.io/badge/zyf.ai-Launch%20App-111827?style=for-the-badge" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/Tasmil-Finance/user-docs">
+    <img alt="Docs" src="https://img.shields.io/badge/Documentation-Read%20Now-1d4ed8?style=for-the-badge" />
+  </a>
+  &nbsp;
+  <img alt="Network" src="https://img.shields.io/badge/Stellar-Mainnet-000000?style=for-the-badge" />
 </p>
 
 ---
 
-## What We Build
+## The Problem
 
-Tasmil Finance ([zyf.ai](https://zyf.ai)) lets users deploy capital into yield-generating strategies on Stellar — Blend lending, Soroswap LP, and Aquarius AMM — with AI agents handling rebalancing, risk management, and optimization automatically.
+DeFi yields on Stellar shift daily across lending pools, liquidity pools, and AMMs. Staying optimally allocated requires constant monitoring, manual rebalancing across multiple protocols, and deep knowledge of each ecosystem — a full-time effort most users cannot sustain.
 
-Users connect a Stellar wallet, choose a risk preset (Safe / Balanced / Aggressive), fund a personal keeper-wallet contract, and let the system do the rest.
+## Our Solution
 
----
+Tasmil Finance automates the entire yield lifecycle. Users deposit once, choose a risk preference, and our AI engine takes over — discovering the best opportunities, allocating capital, rebalancing on drift, and harvesting rewards around the clock.
 
-## How It Works
-
-```mermaid
-flowchart LR
-    W[Stellar Wallet] -->|Connect| APP[zyf.ai\nNext.js 16]
-    APP -->|REST / JWT| API[Backend\nNestJS 11]
-    APP -->|AG-UI SSE| AI[AI Agents\nLangGraph]
-    AI --> MCP[MCP Stellar\n60+ DeFi Tools]
-    API --> CRON[Rebalance Engine\nCron Jobs]
-    CRON --> CHAIN[Stellar Mainnet\nSoroban]
-    MCP --> CHAIN
-    CHAIN --> BLEND[Blend\nLending]
-    CHAIN --> SWAP[Soroswap\nDEX LP]
-    CHAIN --> AQ[Aquarius\nAMM]
-```
-
-1. **Connect** — Link your Stellar wallet via Freighter, xBull, or WalletConnect
-2. **Choose** — Select USDC or XLM as base asset and a risk preset
-3. **Fund** — Send assets to your personal keeper-wallet contract
-4. **Earn** — AI agents discover the highest-yielding pools, allocate capital, and rebalance automatically
+No active management. No expertise required. Maximum yield on autopilot.
 
 ---
 
-## Repositories
+## Product
 
-### Public
+**[zyf.ai](https://zyf.ai)** — A non-custodial yield vault platform where users deploy capital into AI-managed strategies across Stellar's DeFi ecosystem.
 
-| Repository | Description | Stack |
-|------------|-------------|-------|
-| [tasmil-finance](https://github.com/Tasmil-Finance/tasmil-finance) | Web application at zyf.ai | Next.js 16, React 19, TailwindCSS 4 |
-| [mcp-stellar](https://github.com/Tasmil-Finance/mcp-stellar) | 60+ Stellar DeFi tools via MCP | TypeScript, Stellar SDK 14 |
-| [user-docs](https://github.com/Tasmil-Finance/user-docs) | User-facing documentation site | Fumadocs, Next.js |
+### How Users Benefit
 
-### Private
+| | |
+|---|---|
+| **Set and forget** | Connect a Stellar wallet, choose a risk level, fund once — the platform handles everything else |
+| **Optimized allocation** | AI continuously scans Blend, Soroswap, Aquarius, and more to find the highest risk-adjusted yield |
+| **Non-custodial** | Funds remain in personal on-chain vaults — Tasmil never holds user assets |
+| **Transparent** | Every rebalance, harvest, and position change is visible on-chain and in the dashboard |
+| **Multi-asset** | Deploy USDC and XLM simultaneously, each with independent optimization |
 
-| Repository | Description | Stack |
-|------------|-------------|-------|
-| backend | API server + automated rebalance engine | NestJS 11, Prisma 7, PostgreSQL |
-| ai | 13 LangGraph AI agents + supervisor | Python 3.12, LangGraph, AG-UI |
-| contracts | Soroban smart contracts | Rust, Soroban SDK |
+### Risk Presets
 
----
-
-## Supported Protocols
-
-| Protocol | Type | Network |
-|----------|------|---------|
-| Blend Capital | Lending / Borrowing | Stellar Mainnet |
-| Soroswap | DEX / Liquidity Pools | Stellar Mainnet |
-| Aquarius AMM | Stable AMM | Stellar Mainnet |
-| Phoenix | DEX (swap routing) | Stellar Mainnet |
-| DeFindex | Yield Vaults | Stellar Mainnet |
-| SDEX | Orderbook DEX | Stellar Mainnet |
-| Allbridge | Cross-chain Bridge | Stellar ↔ EVM |
+| Preset | Strategy |
+|--------|---------|
+| Safe | Conservative allocation with capital buffer — prioritizes stability |
+| Balanced | Diversified across lending and LP — optimized risk-reward ratio |
+| Aggressive | APY-weighted allocation — maximizes yield, higher volatility tolerance |
 
 ---
 
-## AI Agents
+## Ecosystem Coverage
 
-13 specialized agents coordinated by a supervisor handle every DeFi operation:
+Tasmil Finance integrates with the full Stellar DeFi stack:
 
-| Agent | Specialization |
-|-------|---------------|
-| `supervisor` | Multi-agent orchestration and planning |
-| `blend_agent` | Blend Capital lending and borrowing |
-| `soroswap_agent` | Soroswap DEX LP management |
-| `aquarius_agent` | Aquarius AMM integration |
-| `phoenix_agent` | Phoenix DEX operations |
-| `sdex_agent` | Stellar DEX orderbook trading |
-| `defindex_agent` | DeFindex vault management |
-| `templar_agent` | Templar protocol |
-| `allbridge_agent` | Cross-chain bridge operations |
-| `info_agent` | Account state and DeFi positions |
-| `research_agent` | Market intelligence (CoinGecko, DeFiLlama) |
-| `yield_agent` | Cross-protocol yield optimization |
+| Protocol | Category |
+|----------|---------|
+| Blend Capital | Lending & Borrowing |
+| Soroswap | Decentralized Exchange / LP |
+| Aquarius AMM | Stable Automated Market Maker |
+| Phoenix | DEX & Routing |
+| DeFindex | Yield Vaults |
+| Stellar SDEX | Native Orderbook |
+| Allbridge | Cross-chain Bridge (Stellar ↔ EVM) |
 
 ---
 
-## Tech Stack
+## Technology
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | Next.js 16, React 19, TailwindCSS 4, Stellar Wallets Kit, AG-UI |
-| Backend | NestJS 11, Prisma 7, PostgreSQL 16, Redis |
-| AI | Python 3.12, LangGraph, Starlette, AG-UI Protocol |
-| Tooling | MCP Protocol, 60+ Stellar DeFi tools |
-| Contracts | Rust, Soroban SDK, Stellar CLI |
-| Infrastructure | Docker, Turborepo, pnpm workspaces |
+Tasmil Finance is built on a proprietary AI agent system purpose-built for Stellar DeFi. 13 specialized agents — covering every major protocol — are coordinated by a supervisor that plans, executes, and monitors portfolio operations in real time.
+
+All agent actions require human-in-the-loop approval for transactions. Keeper-wallet smart contracts enforce rate limits, function whitelisting, and session-key expiry on-chain, ensuring user funds are never at risk from unauthorized operations.
+
+---
+
+## Open Source
+
+We are committed to transparency and ecosystem growth. Our Stellar tooling is publicly available:
+
+| Repository | Description |
+|------------|-------------|
+| [tasmil-finance](https://github.com/Tasmil-Finance/tasmil-finance) | Web application — [zyf.ai](https://zyf.ai) |
+| [mcp-stellar](https://github.com/Tasmil-Finance/mcp-stellar) | 60+ Stellar DeFi tools for AI agents via Model Context Protocol |
+| [user-docs](https://github.com/Tasmil-Finance/user-docs) | Platform documentation |
 
 ---
 
 <p align="center">
-  Built for autonomous, secure, cross-protocol DeFi on Stellar.
+  <a href="https://zyf.ai">zyf.ai</a>
 </p>
