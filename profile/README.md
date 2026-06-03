@@ -1,99 +1,121 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/images/logo.png" alt="Tasmil Finance" width="120" />
+  <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/images/logo.png" alt="Tasmil Finance" width="110" />
 </p>
 
 <h1 align="center">Tasmil Finance</h1>
 
 <p align="center">
-  <strong>Autonomous yield optimization on Stellar</strong>
+  <strong>Autonomous yield optimization on Stellar</strong><br/>
+  AI agents that find, allocate, and rebalance your DeFi portfolio — automatically.
 </p>
 
 <p align="center">
   <a href="https://tasmil-finance.xyz">
-    <img alt="Live App" src="https://img.shields.io/badge/tasmil-finance.xyz-Launch%20App-111827?style=for-the-badge" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Tasmil-Finance/user-docs">
-    <img alt="Docs" src="https://img.shields.io/badge/Documentation-Read%20Now-1d4ed8?style=for-the-badge" />
+    <img alt="Live App" src="https://img.shields.io/badge/tasmil--finance.xyz-Launch%20App-111827?style=for-the-badge" />
   </a>
   &nbsp;
   <img alt="Network" src="https://img.shields.io/badge/Stellar-Mainnet-000000?style=for-the-badge" />
+  &nbsp;
+  <img alt="Status" src="https://img.shields.io/badge/Status-Live-22c55e?style=for-the-badge" />
 </p>
 
 ---
 
-## The Problem
+## What We Build
 
-DeFi yields on Stellar shift daily across lending pools, liquidity pools, and AMMs. Staying optimally allocated requires constant monitoring, manual rebalancing across multiple protocols, and deep knowledge of each ecosystem — a full-time effort most users cannot sustain.
+Tasmil Finance automates the entire DeFi yield lifecycle on Stellar. Users deposit once, choose a risk level, and our AI engine continuously discovers the best opportunities, allocates capital, and rebalances across protocols — around the clock, with no active management required.
 
-## Our Solution
+---
 
-Tasmil Finance automates the entire yield lifecycle. Users deposit once, choose a risk preference, and our AI engine takes over — discovering the best opportunities, allocating capital, rebalancing on drift, and harvesting rewards around the clock.
+## Ecosystem
 
-No active management. No expertise required. Maximum yield on autopilot.
+<table>
+  <tr>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/agents/blend-agent.svg" width="64" height="64" alt="Blend" /><br/>
+      <sub><b>Blend Capital</b></sub><br/>
+      <sub>Lending</sub>
+    </td>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/agents/soroswap-agent.svg" width="64" height="64" alt="Soroswap" /><br/>
+      <sub><b>Soroswap</b></sub><br/>
+      <sub>DEX / LP</sub>
+    </td>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/agents/aquarius-agent.svg" width="64" height="64" alt="Aquarius" /><br/>
+      <sub><b>Aquarius</b></sub><br/>
+      <sub>Stable AMM</sub>
+    </td>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/agents/phoenix-agent.svg" width="64" height="64" alt="Phoenix" /><br/>
+      <sub><b>Phoenix</b></sub><br/>
+      <sub>DEX</sub>
+    </td>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/agents/defindex-agent.svg" width="64" height="64" alt="DeFindex" /><br/>
+      <sub><b>DeFindex</b></sub><br/>
+      <sub>Vaults</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/agents/sdex-agent.svg" width="64" height="64" alt="SDEX" /><br/>
+      <sub><b>SDEX</b></sub><br/>
+      <sub>Orderbook</sub>
+    </td>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/agents/allbridge-agent.svg" width="64" height="64" alt="Allbridge" /><br/>
+      <sub><b>Allbridge</b></sub><br/>
+      <sub>Cross-chain Bridge</sub>
+    </td>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/agents/templar-agent.svg" width="64" height="64" alt="Templar" /><br/>
+      <sub><b>Templar</b></sub><br/>
+      <sub>Lending</sub>
+    </td>
+    <td align="center" width="120">
+      <img src="https://raw.githubusercontent.com/Tasmil-Finance/tasmil-finance/main/public/images/logo.png" width="64" height="64" alt="Tasmil" /><br/>
+      <sub><b>Tasmil Vaults</b></sub><br/>
+      <sub>Managed Yield</sub>
+    </td>
+    <td align="center" width="120">
+      &nbsp;
+    </td>
+  </tr>
+</table>
+
+---
+
+## How It Works
+
+1. **Connect** — Link your Stellar wallet (Freighter, xBull, WalletConnect)
+2. **Choose** — Pick base asset (USDC / XLM) and risk level (Safe · Balanced · Aggressive)
+3. **Fund** — Deposit into your personal non-custodial keeper-wallet vault
+4. **Earn** — AI agents allocate, rebalance, and harvest rewards automatically
 
 ---
 
 ## Product
 
-**[tasmil-finance.xyz](https://tasmil-finance.xyz)** — A non-custodial yield vault platform where users deploy capital into AI-managed strategies across Stellar's DeFi ecosystem.
-
-### How Users Benefit
-
 | | |
 |---|---|
-| **Set and forget** | Connect a Stellar wallet, choose a risk level, fund once — the platform handles everything else |
-| **Optimized allocation** | AI continuously scans Blend, Soroswap, Aquarius, and more to find the highest risk-adjusted yield |
-| **Non-custodial** | Funds remain in personal on-chain vaults — Tasmil never holds user assets |
-| **Transparent** | Every rebalance, harvest, and position change is visible on-chain and in the dashboard |
-| **Multi-asset** | Deploy USDC and XLM simultaneously, each with independent optimization |
-
-### Risk Presets
-
-| Preset | Strategy |
-|--------|---------|
-| Safe | Conservative allocation with capital buffer — prioritizes stability |
-| Balanced | Diversified across lending and LP — optimized risk-reward ratio |
-| Aggressive | APY-weighted allocation — maximizes yield, higher volatility tolerance |
-
----
-
-## Ecosystem Coverage
-
-Tasmil Finance integrates with the full Stellar DeFi stack:
-
-| Protocol | Category |
-|----------|---------|
-| Blend Capital | Lending & Borrowing |
-| Soroswap | Decentralized Exchange / LP |
-| Aquarius AMM | Stable Automated Market Maker |
-| Phoenix | DEX & Routing |
-| DeFindex | Yield Vaults |
-| Stellar SDEX | Native Orderbook |
-| Allbridge | Cross-chain Bridge (Stellar ↔ EVM) |
-
----
-
-## Technology
-
-Tasmil Finance is built on a proprietary AI agent system purpose-built for Stellar DeFi. 13 specialized agents — covering every major protocol — are coordinated by a supervisor that plans, executes, and monitors portfolio operations in real time.
-
-All agent actions require human-in-the-loop approval for transactions. Keeper-wallet smart contracts enforce rate limits, function whitelisting, and session-key expiry on-chain, ensuring user funds are never at risk from unauthorized operations.
+| **Non-custodial** | Funds stay in personal on-chain vaults — Tasmil never holds assets |
+| **Automated** | AI rebalances across protocols 24/7, no user action required |
+| **Multi-asset** | Deploy USDC and XLM simultaneously with independent strategies |
+| **Transparent** | Every action is verifiable on-chain and visible in the dashboard |
+| **AI-native** | Chat with 13 specialized agents to research, analyze, and execute |
 
 ---
 
 ## Open Source
 
-We are committed to transparency and ecosystem growth. Our Stellar tooling is publicly available:
-
 | Repository | Description |
 |------------|-------------|
 | [tasmil-finance](https://github.com/Tasmil-Finance/tasmil-finance) | Web application — [tasmil-finance.xyz](https://tasmil-finance.xyz) |
-| [mcp-stellar](https://github.com/Tasmil-Finance/mcp-stellar) | 60+ Stellar DeFi tools for AI agents via Model Context Protocol |
 | [user-docs](https://github.com/Tasmil-Finance/user-docs) | Platform documentation |
 
 ---
 
 <p align="center">
-  <a href="https://tasmil-finance.xyz">tasmil-finance.xyz</a>
+  Built on Stellar · Powered by AI · <a href="https://tasmil-finance.xyz">tasmil-finance.xyz</a>
 </p>
