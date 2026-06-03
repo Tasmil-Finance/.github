@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://zyf.ai">
-    <img alt="Live App" src="https://img.shields.io/badge/zyf.ai-Launch%20App-111827?style=for-the-badge" />
+  <a href="https://tasmil-finance.xyz">
+    <img alt="Live App" src="https://img.shields.io/badge/tasmil-finance.xyz-Launch%20App-111827?style=for-the-badge" />
   </a>
   &nbsp;
   <a href="https://github.com/Tasmil-Finance/user-docs">
@@ -36,7 +36,7 @@ No active management. No expertise required. Maximum yield on autopilot.
 
 ## Product
 
-**[zyf.ai](https://zyf.ai)** — A non-custodial yield vault platform where users deploy capital into AI-managed strategies across Stellar's DeFi ecosystem.
+**[tasmil-finance.xyz](https://tasmil-finance.xyz)** — A non-custodial yield vault platform where users deploy capital into AI-managed strategies across Stellar's DeFi ecosystem.
 
 ### How Users Benefit
 
@@ -88,12 +88,12 @@ We are committed to transparency and ecosystem growth. Our Stellar tooling is pu
 
 | Repository | Description |
 |------------|-------------|
-| [tasmil-finance](https://github.com/Tasmil-Finance/tasmil-finance) | Web application — [zyf.ai](https://zyf.ai) |
+| [tasmil-finance](https://github.com/Tasmil-Finance/tasmil-finance) | Web application — [tasmil-finance.xyz](https://tasmil-finance.xyz) |
 | [mcp-stellar](https://github.com/Tasmil-Finance/mcp-stellar) | 60+ Stellar DeFi tools for AI agents via Model Context Protocol |
 | [user-docs](https://github.com/Tasmil-Finance/user-docs) | Platform documentation |
 
 ---
 
 <p align="center">
-  <a href="https://zyf.ai">zyf.ai</a>
+  <a href="https://tasmil-finance.xyz">tasmil-finance.xyz</a>
 </p>
